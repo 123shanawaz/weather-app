@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App | Ujjwal Maheshwari</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="container">
+
+            <!-- heading -->
+            <h1>Weather App</h1>
+            <div class="tabs">
+                <div class="your-weather-tab tab">Your Weather</div>
+                <div class="search-weather-tab tab">Search Weather</div>
+            </div>
+
+            <!-- Grant Location Access -->
+            <div class="grant-location-access">
+                <img src="https://raw.githubusercontent.com/Ujjwal2327/Weather-App/master/assets/location.png" alt="location" width="50" height="50" loading="lazy">
+                <h2>Grant Location Access</h2>
+                <p>Allow Access to get weather Information</p>
+                <button class="grant-access-btn">Grant Access</button>
+            </div>
+
+            <!-- search form -->
+            <form class="search-form">
+                <input type="text" class="form-input">
+                <button type="submit" class="form-submit-btn">
+                    <img src="https://raw.githubusercontent.com/Ujjwal2327/Weather-App/master/assets/search.png" alt="Search" loading="lazy" width="20" height="20">
+                </button>
+            </form>
+
+            <!-- loading -->
+            <div class="loading">
+                <img src="https://raw.githubusercontent.com/Ujjwal2327/Weather-App/master/assets/loading.gif" alt="logo" width="150" height="150" loading="lazy">
+                <p class="loading-para">Loading</p>
+            </div>
+
+            <!-- weather-info -->
+            <div class="info">
+                <div class="location">
+                    <p class="city"></p>
+                    <img src="" alt="" class="country-icon">
+                </div>
+
+                <p class="desc-name"></p>
+                <img src="" alt="" class="desc-icon">
+
+                <p class="temperature"></p>
+
+                <div class="details">
+
+                    <div class="windspeed detail">
+                        <img src="https://raw.githubusercontent.com/Ujjwal2327/Weather-App/master/assets/wind.png" alt="wind" class="windspeed-icon">
+                        <p>WINDSPEED</p>
+                        <p class="windspeed-value"></p>
+                    </div>
+
+                    <div class="humidity detail">
+                        <img src="https://raw.githubusercontent.com/Ujjwal2327/Weather-App/master/assets/humidity.png" alt="" class="humidity-icon">
+                        <p>HUMIDITY</p>
+                        <p class="humidity-value"></p>
+                    </div>
+
+                    <div class="cloud detail">
+                        <img src="https://raw.githubusercontent.com/Ujjwal2327/Weather-App/master/assets/cloud.png" alt="" class="cloud-icon">
+                        <p>CLOUDS</p>
+                        <p class="cloud-value"></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- not found -->
+            <img src="https://raw.githubusercontent.com/Ujjwal2327/Weather-App/master/assets/not-found.png" alt="" class="notFound">
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
